@@ -1,2 +1,4 @@
 language: java
-script: mvn install -DskipTests=true
+script: 
+  - mvn -N io.takari:maven:wrapper -Dmaven=3.5.4
+  - ./mvnw install -DskipTests=true
